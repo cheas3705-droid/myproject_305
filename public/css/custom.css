@@ -1,0 +1,19 @@
+/* public/css/custom.css */
+@font-face {
+    font-family: 'Battambang';
+    src: url('/fonts/Battambang/Battambang-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Battambang';
+    src: url('/fonts/Battambang/Battambang-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Example usage */
+body {
+    font-family: 'Battambang', sans-serif;
+}
