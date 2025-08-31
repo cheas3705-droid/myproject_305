@@ -273,7 +273,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('category.index') }}" class="nav-link">
                       <i class="bi bi-arrow-right mx-2"></i>
                       <p>ប្រភេទផលិតផល</p>
                     </a>
