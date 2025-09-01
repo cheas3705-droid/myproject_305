@@ -36,9 +36,10 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Category $category)
+    public function show(string $id)
     {
-        //
+        $category = Category::where('id',$id)->firstOrFail();
+        return view("category.show")->with("category",$category);
     }
 
     /**

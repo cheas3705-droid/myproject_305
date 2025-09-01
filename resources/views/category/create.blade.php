@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('title','Create Category')
 @section('content')
-<h2 class="alert alert-success text-center">Create Category</h2>
     <div class="container">
         <div class="row">
             <div class="col col-8 offset-2">
