@@ -27,7 +27,7 @@ class UserController extends Controller
         $data->password = bcrypt($request->password);
         $data->save();
 
-        return redirect()->route('login.lihat');
+        return redirect()->route('login');
     }
 
     public function loginLihat()
@@ -43,11 +43,11 @@ class UserController extends Controller
             $request->session()->regenerate();
             return redirect()->route('dashboard')->with('success', 'ចូលប្រព័ន្ធបានជោគជ័យ');
         }
-        return redirect()->route('login.lihat')->with('failed','ឈ្មោះអ្នកប្រើប្រាស់ និង លេខសម្ងាត់ អាចនឹងមិនត្រឹមត្រូវ');
+        return redirect()->route('login')->with('failed','ឈ្មោះអ្នកប្រើប្រាស់ និង លេខសម្ងាត់ អាចនឹងមិនត្រឹមត្រូវ');
     }
     public function logout()
     {
         Auth::logout();
-        return redirect()->route('login.lihat');
+        return redirect()->route('login');
     }
 }

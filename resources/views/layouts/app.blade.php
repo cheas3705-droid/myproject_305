@@ -3,7 +3,7 @@
   <!--begin::Head-->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>@yield('title','Dashboard')</title>
+    <title>Dashboard @yield("title")</title>
     <!--begin::Accessibility Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="color-scheme" content="light dark" />
@@ -106,10 +106,10 @@
                 <!--end::Menu Body-->
                 <!--begin::Menu Footer-->
                 <li class="user-footer d-flex">
-                    <a href="#" class="btn btn-info">Profile</a>
+                    <a href="#" class="btn btn-outline-info"><i class="fa-solid fa-id-badge"></i> ប្រវត្ដិរូប</a>
                     <form action="{{ route('logout') }}" method="POST" class="ms-auto">
                         @csrf
-                        <button class="btn btn-success">ចាកចេញ</button>
+                        <button class="btn btn-outline-primary"><i class="fa-solid fa-rotate-right"></i> ចាកចេញ</button>
                     </form>
                 </li>
                 <!--end::Menu Footer-->
